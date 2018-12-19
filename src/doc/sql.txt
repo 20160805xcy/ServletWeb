@@ -1,0 +1,12 @@
+use ssm;
+create table CUSTOMERS(
+	ID varchar(100) primary key,
+	NAME varchar(100),
+	GENDER varchar(10),
+	BIRTHDAY date,
+	PHONENUM varchar(100),
+	EMAIL varchar(100),
+	HOBBY varchar(100),
+	TYPE varchar(100),
+	DESCRIPTION varchar(100)
+);
