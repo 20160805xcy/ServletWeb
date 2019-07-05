@@ -27,12 +27,22 @@ public class JdbcUtil {
         }
     }
 
-
+    /**
+     * 获取连接
+     * @return
+     * @throws Exception
+     */
     public static Connection getConnection() throws Exception {
         Connection conn = DriverManager.getConnection(url, user, password);
         return conn;
     }
 
+    /**
+     * 资源释放
+     * @param rs
+     * @param stmt
+     * @param conn
+     */
     public static void release(ResultSet rs, Statement stmt, Connection conn) {
         if (rs != null) {
             try {
